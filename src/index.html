@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../node_modules/katex/dist/katex.min.css">
+  <link rel="stylesheet" href="../node_modules/markdown-it-texmath/css/texmath.css">
+
+  <link rel="stylesheet" href="../node_modules/highlight.js/styles/a11y-dark.css">
+  <link rel="stylesheet" href="dist/monaco.css">
+  <link rel="stylesheet" href="dist/markdown.css">
+  <link rel="stylesheet" href="dist/main.css">
+  <link rel="stylesheet" href="dist/index.css">
+
+  <script src="lib/ace.js"></script>
+  <script src="lib/mode-markdown.js"></script>
+  <script src="lib/theme-chrome.js"></script>
+  <title>Snippet Editor</title>
+</head>
+<body>
+  <div class="main-container">
+    <section class="sidebar-container">
+      <h2>SideMenu</h2>
+      <button type="button" id="add-snippet-button">Add</button>
+      <ul id="language-list">
+      </ul>
+    </section>
+    <section class="editor-container">
+      <h2>MarkdownEditor</h2>
+      <div class="markdown-wrapper">
+        <!-- <textarea name="markdown-editor-area" id="markdown-editor"></textarea> -->
+        <div id="markdown-editor"></div>
+        <div id="markdown-preview" class="markdown"></div>
+      </div>
+      <div id="snippet-editor"></div>
+    </section>
+  </div>
+  <script src="../node_modules/monaco-editor/min/vs/loader.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

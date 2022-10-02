@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$scrollbar-width: 8px;
+
+::-webkit-scrollbar {
+  width: $scrollbar-width;
+}
+::-webkit-scrollbar-track {
+  background: rgba(223,229,232, 0.4);
+  border-radius: calc(#{$scrollbar-width});
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(178,183,185, 0.4);
+  border-radius: calc(#{$scrollbar-width});
+}
+
+::-webkit-scrollbar:hover {
+  width: $scrollbar-width;
+}
+::-webkit-scrollbar-track:hover {
+  background: rgba(223,229,232, 0.8);
+  border-radius: calc(#{$scrollbar-width});
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(178, 183, 185, 0.8);
+  border-radius: calc(#{$scrollbar-width});
+}
